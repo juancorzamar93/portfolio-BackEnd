@@ -62,13 +62,14 @@
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
         </dependency>
-        
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-        </dependency>
-
-             
+            <version>1.7.5</version>
+            <type>jar</type>
+        </dependency>                
+        
+                     
     </dependencies>
 
     <build>
