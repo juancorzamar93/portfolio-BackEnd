@@ -19,7 +19,7 @@ public class JczApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("https://project-argentinaprograma-jcz.web.app");
+				registry.addMapping("/**").allowedOrigins("https://project-argentinaprograma-jcz.firebaseapp.com");
 			}
 		};
 	}

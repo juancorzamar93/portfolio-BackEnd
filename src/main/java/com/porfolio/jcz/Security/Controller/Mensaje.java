@@ -4,10 +4,6 @@
  */
 package com.porfolio.jcz.Security.Controller;
 
-/**
- *
- * @author corza
- */
 public class Mensaje {
     private String mensaje;
     
