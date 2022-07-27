@@ -45,7 +45,7 @@ public class AuthController {
     RolService rolService;
     @Autowired
     JwtProvider jwtProvider;
-    @CrossOrigin(origins = "https://project-argentinaprograma-jcz.web.app")
+
     @PostMapping("/nuevo")
     public ResponseEntity <?> nuevo(@Valid @RequestBody NuevoUsuario nuevoUsuario, BindingResult bindingResult){
         if(bindingResult.hasErrors())
@@ -71,7 +71,7 @@ public class AuthController {
          return new ResponseEntity(new Mensaje("Usuario guardado"), HttpStatus.CREATED);
     
     }
-    @CrossOrigin(origins = "https://project-argentinaprograma-jcz.web.app")
+
     @PostMapping("/login")    
     public ResponseEntity<JwtDto> login(@Valid @RequestBody LoginUsuario loginUsuario, BindingResult bindingResult){
         if(bindingResult.hasErrors())
